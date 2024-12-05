@@ -149,7 +149,7 @@ const FloatingIcon = styled(FloatingElement)<StyledElementProps>`
 `;
 
 const Highlight = styled.span`
-  color: var(--primary-color);
+  color: #fc31a4;
 `;
 
 const Hero: React.FC = () => {
@@ -258,7 +258,8 @@ const Hero: React.FC = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          Crafting Digital <Highlight>Experiences</Highlight>
+          Hi, I'm Kousi, <br />I Craft{" "}
+          <Highlight>Digital Experiences</Highlight>
           <br />
           That People Love
         </Title>

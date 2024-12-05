@@ -15,17 +15,15 @@ const FooterContent = styled(motion.div)`
   margin: 0 auto;
   padding: 0 2rem;
   text-align: center;
-  color: rgba(255, 255, 255, 0.7);
   font-size: 0.9rem;
 
   a {
-    color: #fff;
     text-decoration: none;
     font-weight: 500;
     transition: color 0.3s ease;
 
     &:hover {
-      color: #64ffda;
+      color: #fc31a4;
     }
   }
 `;
@@ -40,7 +38,7 @@ const Footer: React.FC = () => {
       >
         Designed with ♥️ by{" "}
         <a
-          href="https://inkstellar.com"
+          href="https://inkstellar.in"
           target="_blank"
           rel="noopener noreferrer"
         >
