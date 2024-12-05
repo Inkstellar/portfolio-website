@@ -17,7 +17,7 @@ const MainContent = styled.main`
 
 function App() {
   return (
-    <Router>
+    <Router basename="/portfolio-website">
       <GlobalStyles />
       <AppContainer>
         <MainContent>

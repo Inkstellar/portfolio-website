@@ -185,6 +185,18 @@ const Contact: React.FC = () => {
 
         <Form onSubmit={handleSubmit}>
           <InputGroup>
+            <Label htmlFor="email">Your Name</Label>
+            <Input
+              type="text"
+              id="name"
+              name="name"
+              value={formData.name}
+              onChange={handleChange}
+              required
+              placeholder="Your name.."
+            />
+          </InputGroup>
+          <InputGroup>
             <Label htmlFor="email">Your Email</Label>
             <Input
               type="email"
