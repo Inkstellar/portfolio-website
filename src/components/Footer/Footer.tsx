@@ -8,6 +8,9 @@ const FooterContainer = styled.footer`
   background: transparent;
   margin-top: auto;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
+  @media print {
+    display: none;
+  }
 `;
 
 const FooterContent = styled(motion.div)`

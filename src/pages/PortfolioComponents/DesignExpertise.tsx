@@ -4,6 +4,7 @@ import { Section, SectionTitle, ProgressBar } from "./styledComponents";
 function DesignExpertise() {
   return (
     <Section>
+       
       <SectionTitle>INDUSTRY EXPERTISE</SectionTitle>
       <div style={{ marginTop: "1rem" }}>
         <div>

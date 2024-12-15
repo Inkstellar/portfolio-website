@@ -8,6 +8,9 @@ export const PortfolioContainer = styled.div`
 
 export const PHeader = styled.div`
   margin-bottom: 2rem;
+  @media print {
+    margin-bottom: 0;
+  }
 `;
 
 export const Name = styled.h1`
@@ -26,16 +29,35 @@ export const ContactInfo = styled.div`
   gap: 1rem;
   color: #666;
   margin: 1rem 0;
+  @media print {
+    margin: 0;
+  }
 `;
 
 export const Section = styled.section`
   margin: 2rem 0;
+  @media print {
+    margin: 0 !important;
+    padding:0;
+}
 `;
 
 export const SectionTitle = styled.h3`
   border-bottom: 2px solid #eee;
   padding-bottom: 0.5rem;
   color: #333;
+  @media print {
+    margin: 0 !important;
+    border-bottom: none;
+    padding-bottom: 0;
+    padding-top: 2pt;
+     color: #ccc;
+  }
+`;
+export const P = styled.p`
+  @media print {
+    line-height: 1;
+  }
 `;
 
 export const Grid = styled.div`
@@ -53,18 +75,37 @@ export const Skill = styled.div`
 
 export const ExperienceItem = styled.div`
   margin: 1.5rem 0;
+  @media print {
+    margin: 0;
+  }
 `;
 
 export const CompanyInfo = styled.div`
   display: flex;
   justify-content: space-between;
   margin-bottom: 0.5rem;
+  @media print {
+    margin-top: 2pt;
+    margin-bottom:  2pt;
+  }
 `;
-
+export const Tools = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-top: 4px;
+  @media print {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+`;
 export const StarContainer = styled.div`
   display: flex;
   gap: 4px;
   margin-top: 4px;
+  @media print {
+    display: none;
+  }
 `;
 
 export const Star = styled.span<{ filled: boolean }>`

@@ -6,8 +6,9 @@ import {
   StarContainer,
   Star,
   ToolItem,
+  Tools,
 } from "./styledComponents";
-
+ 
 interface Tool {
   name: string;
   rating: number;
@@ -31,7 +32,7 @@ const frontendTools: Tool[] = [
 
 const StarRating: React.FC<{ rating: number }> = ({ rating }) => {
   return (
-    <StarContainer>
+    <StarContainer className="star-rating">
       {[1, 2, 3, 4, 5].map((star) => (
         <Star key={star} filled={star <= rating}>
           ★
@@ -45,24 +46,23 @@ export default function DesignTools() {
   return (
     <Section>
       <SectionTitle>DESIGN TOOLS</SectionTitle>
-      <Grid>
+      <Tools >
         {tools.map((tool) => (
           <ToolItem key={tool.name}>
             <strong>{tool.name}</strong>
-            <StarRating rating={tool.rating} />
+            <StarRating  rating={tool.rating} />
           </ToolItem>
         ))}
-      </Grid>
+      </Tools>
       <SectionTitle>FRONT-END TOOLS, FRAMEWORKS</SectionTitle>
-
-      <Grid>
+      <Tools>
         {frontendTools.map((tool) => (
           <ToolItem key={tool.name}>
             <strong>{tool.name}</strong>
             <StarRating rating={tool.rating} />
           </ToolItem>
         ))}
-      </Grid>
+      </Tools>
     </Section>
   );
 }
