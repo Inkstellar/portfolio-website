@@ -4,6 +4,7 @@ import Portfolio from "./pages/Portfolio";
 import Home from "./pages/Home";
 import DesignWorks from "./pages/DesignWorks";
 import Contact from "./pages/Contact";
+import PrintPortfolio from "./pages/PrintPortfolio";
 
 const AppRoutes: React.FC = () => {
   return (
@@ -12,6 +13,7 @@ const AppRoutes: React.FC = () => {
       <Route path="/about-me" element={<Portfolio />} />
       <Route path="/design-works" element={<DesignWorks />} />
       <Route path="/contact" element={<Contact />} />
+      <Route path="/print" element={<PrintPortfolio />} />
     </Routes>
   );
 };
